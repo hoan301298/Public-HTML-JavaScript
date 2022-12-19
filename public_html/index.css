@@ -1,0 +1,28 @@
+body {
+	background-image: url('hinhnen1.jpg');
+	background-repeat: no-repeat;
+}
+#flex-container1 {
+	text-align: center;
+	margin: auto;
+	padding-top: 60px;
+}
+#flex-container1 p, input {
+	font-size: 25px;
+}
+#flex-container2 {
+	text-align: center;
+	margin: auto;
+}
+#flex-container2 button {
+	width: 80px;
+	height: 40px;
+}
+#demo1 {
+	color: yellow;
+	font-size: 25px;
+	text-align: center;
+}
+#demo {
+	display: none;
+}

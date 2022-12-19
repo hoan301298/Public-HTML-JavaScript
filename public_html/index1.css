@@ -1,0 +1,20 @@
+h1{
+	background-color: red;
+	color: white;
+}
+.flex-container {
+	display: flex;
+  background-color: lavender;
+  border-style: solid;
+  margin: 20px;
+  padding: 20px;
+  flex-wrap: nowrap;
+}
+img{
+	width: 140px;
+	height: 140px;
+}
+p{
+	font-size: 120%;
+	color: green;
+}

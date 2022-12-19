@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./project-team.css">
+</head>
+<body>
+	<table id="demo"></table>
+    <script>
+        console.log("FETCH!");
+    	fetch("http://www.cc.puv.fi/~e2000575/order.json")
+    		.then(res => res.json())
+    		.then(json => myFunction(json));
+        function myFunction(json) {
+            var table="<tr><th>Orderid</th><th>Customer</th><th>Invoicing address</th><th>Delivery address</th><th>Delivery date</th><th>salesperson</th><th>Comment</th></tr>";
+            for (i = 0; i < json.length; i++) {
+                table += "<tr><td>" + "<button>" +
+                json[i].orderid + "</button>" + "</td><td>" +
+                json[i].customer + "(" + json[i].customerid + ")" + "</td><td>" +
+                json[i].invaddr + "</td><td>" +
+                json[i].delivaddr + "</td><td>" +
+                json[i].deliverydate + "</td><td>" +
+                json[i].respsalesperson + "</td><td>" +
+                json[i].comment + "</td></tr>";            
+	    }
+            document.getElementById("demo").innerHTML = table;
+        }
+    </script>
+</body>
+</html>

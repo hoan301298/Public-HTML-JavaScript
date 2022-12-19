@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./games.css">
+</head>
+<body>
+	<h1>ROCK PAPER SCISSORS GAME !</h1>
+	<div id="container1">
+		<button onclick="myFunction1()"><img src="./keo.jpg"></button>
+		<button onclick="myFunction2()"><img src="./bua.jpg"></button>
+		<button onclick="myFunction3()"><img src="./bao.jpg"></button>
+	</div>
+	<div id="images">
+		<img src="./cute.gif" id="myIMG" align="center" width="425px" height="470px">
+	</div>
+	<script>
+		function myFunction1() {
+			var x = Math.random() * 10;
+			var z = "";
+			var y;
+			if (x >= 6.66) {
+				document.getElementById("myIMG").src = "keobao.gif";
+				document.getElementById("myIMG").style.height= "300px";
+				document.getElementById("myIMG").style.width= "550px";
+  				z = "YOU WIN!";
+			} else if (x >= 3.33) {
+				document.getElementById("myIMG").src = "keohoa.gif";
+				document.getElementById("myIMG").style.height= "300px";
+				document.getElementById("myIMG").style.width= "550px";
+ 				z = "DRAW!";
+			} else {
+				document.getElementById("myIMG").src = "keobua.gif";
+				document.getElementById("myIMG").style.height= "300px";
+				document.getElementById("myIMG").style.width= "550px";
+  				z = "YOU LOSE!";
+			}
+			alert(z);
+		}
+	</script>
+	<script>
+		function myFunction2() {
+			var a = Math.random() * 10;
+			var b = "";
+			var c;
+			if (a >= 6.66) {
+				document.getElementById("myIMG").src = "buabao.gif";
+				document.getElementById("myIMG").style.height= "300px";
+				document.getElementById("myIMG").style.width= "550px";
+  				b = "YOU LOSE!";
+			} else if (a >= 3.33) {
+				document.getElementById("myIMG").src = "buakeo.gif";
+				document.getElementById("myIMG").style.height= "300px";
+				document.getElementById("myIMG").style.width= "550px";
+  				b = "YOU WIN!";
+			} else {
+				document.getElementById("myIMG").src = "buahoa.gif";
+				document.getElementById("myIMG").style.height= "300px";
+				document.getElementById("myIMG").style.width= "550px";
+  				b ="DRAW!";
+			}
+			alert(b);
+		}
+	</script>
+	<script>
+		function myFunction3() {
+			var m = Math.random() * 10;
+			var n = "";
+			var q;
+			if (m >= 6.66) {
+				document.getElementById("myIMG").src = "baohoa.gif";
+				document.getElementById("myIMG").style.height= "300px";
+				document.getElementById("myIMG").style.width= "550px";
+ 				n = "DRAW!";
+			} else if (m >= 3.33) {
+				document.getElementById("myIMG").src = "baokeo.gif";
+				document.getElementById("myIMG").style.height= "300px";
+				document.getElementById("myIMG").style.width= "550px";
+  				n= "YOU LOSE!"
+			} else {
+				document.getElementById("myIMG").src = "baobua.gif";
+				document.getElementById("myIMG").style.height= "300px";
+				document.getElementById("myIMG").style.width= "550px";
+  				n = "YOU WIN!"
+			}
+			alert(n);
+		}
+	</script>
+	</div>	
+</body>
+</html>

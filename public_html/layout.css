@@ -1,0 +1,40 @@
+#images img{
+	display: block;
+	width: 600px;
+	height: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid blue;
+}
+.header{
+	border: 5px solid #73AD21;
+	background-color: blue;
+	text-align: center;
+	padding: 10px;
+	font-size: 130%;
+	font-color: red;
+	margin-bottom: 0px;
+}
+.text{
+	background-color: #0222;
+	text-align: center;
+}
+.navigation{ 
+	padding: 10px;
+	background-color: #0879;
+	text-align: center;
+	box-sizing: 100%;
+}
+ul{
+	list-style-type: none;
+	font-size: 20px;
+}
+.footer{
+	background-color: Orange;
+	font-size: 100%;
+	text-align: center;
+	padding: 20px;
+}
+body{
+	background-color: lavender;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<h1>Log in</h1>
+		<label for="customerID">Customer ID:</label>
+		<input type="text" id="customerID">
+		<label for="Password">Pass Word:</label>
+		<input type="password" name="password">
+		<button onclick="myFunction()">Sign in</button>
+		<p id="demo"></p>
+	</div>
+	<script>
+    	fetch("http://www.cc.puv.fi/~e2000575/order.json")
+    		.then(res => res.json())
+    		.then(json => myFunction(json));
+		function myFunction(json) {
+			var text ="";
+			var x = document.getElementById("customerID").value;
+			for (i = 0; i < json.length; i++) {
+				if(x = json[0].customerid, i++) {
+					
+				} else {
+					alert("wrong");
+				}
+			}	
+		}
+	</script>
+</body>
+</html>

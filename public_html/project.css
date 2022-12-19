@@ -1,0 +1,120 @@
+body{
+	background-color: #DCDCDC;
+}
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 5px;
+	border-bottom: 1px solid blue;
+	background-color: lavender;
+	margin-bottom: 0px;
+}
+.flex-container img {
+	width: 150px;
+	height: 60px;
+	padding-left: 20px;
+	padding-top: 10px:;
+}
+.inside {
+	display: flex;
+	flex-wrap: nowrap;
+	float: right;
+	padding-left: 800px;
+}
+input[type="button"],input[type="submit"] {
+	height: 30%;
+}
+input[type="submit"],input[type="text"],input[type="password"],input[type="button"],select {
+	margin-top: 5px;
+	align-content: center;
+}
+select{
+	height: 40%;
+}
+.flex-container1{
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	padding: 10px;
+	background-color: grey;
+	float: left;
+	margin-top: 10px;
+}
+.flex-container1 img{
+	width: 300px;
+	height: 320px;
+	padding-left: 10px;
+}
+#t1 {
+	text-align: center;
+	font-size: 150%;
+}
+.flex-container1 ul{
+	font-size: 120%;
+}
+.flex-container1 p{
+	color: white;
+	font-size: 120%;
+}
+.flex-container1 hr{
+	color: white;
+	width: 300px;
+}
+video{
+	 width: 250px;
+	 height: 180px;
+	 align-self: center;
+}
+.flex-container2{
+	float: left;
+ 	padding: 20px;
+ 	width: 950px;
+ 	height: 300px;
+ 	line-height: 20px;
+ 	margin-top: 10px;
+}
+.flex-container2 h1{
+	font-size: 200%;
+	padding-left: 15px;
+}
+.flex-container2 hr{
+	width: 1150px;
+}
+.flex-container2 p{
+	padding-left: 17px;
+}
+.t2{
+	text-align: center;
+}
+dd{
+	padding-left: 65px;
+}
+.flex-container2 ul{
+	line-height: 50px;
+	font-size: 130%;
+}
+.c1{
+	width: 150px;
+	height: 7px;
+	background: linear-gradient(to right, black 75%, white 75%);
+}
+.c2{
+	width: 150px;
+	height: 7px;
+	background: linear-gradient(to right, black 80%, white 80%);
+}
+.c3{
+	width: 150px;
+	height: 7px;
+	background: linear-gradient(to right, black 70%, white 70%);
+}
+.c4{
+	width: 150px;
+	height: 7px;
+	background: linear-gradient(to right, black 80%, white 80%);
+}
+.c5{
+	width: 150px;
+	height: 7px;
+	background: linear-gradient(to right, black 90%, white 90%);
+}

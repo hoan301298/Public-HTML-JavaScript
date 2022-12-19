@@ -1,0 +1,38 @@
+.alo {
+	border: 5px solid black;
+	font-size: 130%;
+	width: 100%;
+}
+table{
+	border: 2px solid black;
+	margin: 3px;
+	height: 150%;
+}
+th,td {
+	border: 1px solid black;
+}
+th{
+	background-color: grey;
+}
+body{
+	background-color: lavender;
+}
+caption{
+	font-weight: bold;
+	font-size: 130%;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+.right{
+	text-align: right;
+}
+.center{
+	text-align: center;
+}
+.text{
+	background-color: blue;
+	color: white;
+}
+.interest,.city{
+	color: red;
+}
